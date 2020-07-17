@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your Results:</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  <div id="wrapper">
+  <header>
+    <h1>House of Gainz Workout Tracker</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="/"> About</a></li>
+  <li><a href="/MacroCalc">Macro Calculator</a> &nbsp;</li>
+   <li><a class="active" href="/workoutTracker">Workout Tracker</a> </li> &nbsp;
+   <li><a href="/macroTracker">Macro Tracker</a></li>  &nbsp;
+
+    </ul>
+  </nav>
+  <img src="images/websitebanner.jpg" alt="weight" width="100%">
+  <div><div id="home"></div>
+  <main>
+
+    <h3>Track Your Workouts Here!</h3>
+    <form name="formid" method="post"
+          action="/submitworkout">
+      <label for="dateSelection">Please select today's Date:</label>
+      <br>
+      <p><b>Workout</b></p>
+      <input type="date" id="dateSelection" name="dateSelection" required>
+      <br>
+      <br>
+      <label for="workoutSelection">Enter your workout:</label>
+      <input type="text" name="workoutSelection" id="workoutSelection" required>
+      <br>
+      <br>
+      <label for="setSelection">Enter your number of sets:</label>
+      <input type="number" min="0" step="1" pattern="\d+" name="setSelection" id="setSelection" required>
+      <br>
+      <br>
+      <label for="repSelection">Enter your number of reps:</label>
+      <input type="number" min="0" step="1" pattern="\d+" name="repSelection" id="repSelection" required>
+      <br>
+      <br>
+      <input type="submit" value="Add Another Workout" id="submit1">
+      <input type="submit" value="Workout Complete!" id="submit2">
+    </form>
+
+      <form name="formid" method="post" action="/">
+      <p><b>Cardio</b></p>
+      <label for="cardioSelection">What cardio did you complete?:</label>
+      <input type="text" name="cardioSelection" id="cardioSelection" required>
+      <br>
+      <br>
+      <label for="timeSelection">Enter your time in minutes:</label>
+      <input type="number" min="0" step="1" pattern="\d+" name="timeSelection" id="timeSelection" required>
+      <br>
+      <br>
+      <input type="submit" value="Submit here!" id="submit3">
+      <br>
+      <br>
+    </form>
+
+    <br>
+    <br>
+
+
+    <% for(let i = 0; i < exercises.length; i++) { %>
+    <div>
+      <%= workouts[i].exerciseinput %>
+      <%= workouts.[i].sets%>
+    </div>
+   <% } %>
+
+
+  </main>
+    <footer>
+      Copyright &copy; 2020 House of Gainz
+      <a href ="mailto: maiselkelly@gmail.com">maiselkelly@gmail.com</a>
+    </footer>
+  </body>
+</html>

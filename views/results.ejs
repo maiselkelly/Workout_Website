@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your Results:</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  <div id="wrapper">
+  <header>
+    <h1>Your current House of Gainz Results</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="/"> About</a></li>
+      <li><a href="/MacroCalc">Macro Calculator</a> &nbsp;</li>
+      <li><a href="/workoutTracker">Workout Tracker</a> </li> &nbsp;
+      <li><a href="/macroTracker">Macro Tracker</a></li>  &nbsp;
+
+    </ul> &nbsp;
+  </nav>
+  <img src="images/websitebanner.jpg" alt="weight" width="100%">
+  <div><div id="home"></div>
+  <main>
+
+    <h3>Your Current Macros</h3>
+    <h4>As you plan to bulk or cut, please make sure to adjust accordingly.</h4>
+  <div class="box">
+  <p><b>Weight is:</b> <%= weight %> pounds.</p>
+
+    <p><b>Your current BMI is:</b> <%=BMI%></p>
+
+    <p><b>Your current BMR is:</b> <%= BMR %></p>
+
+    <p><b>Because you Selected <u><%= ddlselect%></u>, here are your current macros:</b></p>
+
+    <p><b>Calories is:</b> <%= calories %> calories.</p>
+
+    <p><b>Protein is:</b> <%= protein%> grams.</p>
+
+    <p><b>Fat is:</b> <%= fat%> grams.</p>
+
+    <p><b>Carbs is:</b> <%= carbs%> grams.</p>
+  </div>
+
+    <h3> GOOD LUCK!</h3>
+    <br>
+    <br>
+  </main>
+
+    <footer>
+      Copyright &copy; 2020 House of Gainz
+      <a href ="mailto: maiselkelly@gmail.com">maiselkelly@gmail.com</a>
+    </footer>
+  </body>
+</html>

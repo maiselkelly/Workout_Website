@@ -1,0 +1,151 @@
+body {
+  color: black;
+  text-align: center;
+  background-image: url("/images/WallPaper.jpg");
+  background-size: 100% 100%;
+  padding: 10px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+
+h1{
+  margin-bottom: 0;
+  font: 40px "American Typewriter";
+  color: whitesmoke;
+  background-color: #69778c;
+
+}
+
+h2{
+  color: midnightblue;
+  font: 30px "American Typewriter";
+  padding: 10px;
+}
+
+h3{
+  color: midnightblue;
+  font: 25px "American Typewriter";
+
+}
+
+
+nav{   color: whitesmoke;
+  text-align: center;
+  font: 15px "American Typewriter";
+  background-color: #69778c;
+  padding: 5px;}
+
+#nav-wrapper {
+  width:465px;
+  margin:0 auto;
+  padding:20px 0;
+  background:#3D3331;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #69778c;
+}
+
+li{
+ display: inline-block;
+}
+
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: darkgrey;
+  font-weight: bold;
+}
+
+.active{
+  background-color: whitesmoke;
+  color: midnightblue;
+}
+
+
+main{padding-left: 20px;
+  padding-right: 20px;
+  display:block;}
+
+footer {font-size: .70em;
+  font-style: italic;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;}
+
+form{
+  display: inline-block;
+  background-color: #a1afc4;
+  font-family: Arial;
+  padding: 20px;
+  width: 500px;
+}
+
+
+a {
+  color: whitesmoke;
+}
+
+#home {
+  height: 30px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+
+.box{
+  color: black;
+  background-color: #a1afc4;
+  display: inline-block;
+  font-family: Arial;
+  width: 500px;
+  padding-left: 20px;
+}
+
+
+.col {
+  /*float: left;*/
+  display: table-cell;
+  /*float: left;*/
+  width: 30%;
+  background-color: lightgray;
+  border-style: groove;
+  border-color: midnightblue;
+  border-width: 5px;
+}
+
+.col-container {
+  display: table; /* Make the container element behave like a table */
+  width: 100%; /* Set full-width to expand the whole page */
+}
+
+
+
+
+
+#wrapper {
+  background-color: white;
+  min-width: 700px;
+  max-width: 1024px;
+  box-shadow: 5px 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%}
+
+footer{
+  color: whitesmoke;
+  background-color: #69778c;
+  display: inline-block;
+}

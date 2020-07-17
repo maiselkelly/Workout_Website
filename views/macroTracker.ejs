@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Workout Tracker:</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  <div id="wrapper">
+  <header>
+    <h1>House of Gainz Macro Tracker</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="/"> About</a></li>
+      <li><a href="/MacroCalc">Macro Calculator</a> &nbsp;</li>
+      <li><a href="/workoutTracker">Workout Tracker</a> </li> &nbsp;
+      <li><a class="active" href="/macroTracker">Macro Tracker</a></li>
+    </ul>
+  </nav>
+  <img src="images/websitebanner.jpg" alt="weight" width="100%">
+  <div><div id="home"></div>
+
+    <main>
+
+      <h3>Track Your Macros Here!</h3>
+      <form name="formid" method="post"
+            action="/">
+        <label for="dateSelection">Please select today's Date:</label>
+        <input type="date" id="dateSelection" name="date" required>
+        <br>
+        <br>
+        <label for="weightCheck">Enter your current weight here:</label>
+        <input type="number" min="0" step="1" pattern="\d+" name="weightCheck" id="weightCheck" required>
+        <br>
+        <br>
+        <label for="calCheck">Enter your current calories here:</label>
+        <input type="number" min="0" step="1" pattern="\d+" name="calCheck" id="calCheck" required>
+        <br>
+        <br>
+        <label for="proteinCheck">Enter your current protein here:</label>
+        <input type="number" min="0" step="1" pattern="\d+" name="proteinCheck" id="proteinCheck" required>
+        <br>
+        <br>
+        <label for="fatCheck">Enter your current fat here:</label>
+        <input type="number" min="0" step="1" pattern="\d+" name="fatCheck" id="fatCheck" required>
+        <br>
+        <br>
+        <label for="carbCheck">Enter your current carbs her:</label>
+        <input type="number" min="0" step="1" pattern="\d+" name="carbCheck" id="carbCheck" required>
+        <br>
+        <br>
+        <input type="submit" value="Submit here!" id="submit3">
+        <br>
+        <br>
+      </form>
+      <br>
+      <br>
+    </main>
+
+      <footer>
+      Copyright &copy; 2020 House of Gainz
+      <a href ="mailto: maiselkelly@gmail.com">maiselkelly@gmail.com</a>
+    </footer>
+  </body>
+</html>
