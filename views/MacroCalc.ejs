@@ -10,32 +10,43 @@
     <h1>House of Gainz Macro Calculator</h1>
   </header>
   <nav>
-    <ul>
-      <li><a href="/"> About</a></li>
-      <li><a class="active" href="/MacroCalc">Macro Calculator</a> &nbsp;</li>
-      <li><a href="/workoutTracker">Workout Tracker</a> </li> &nbsp;
-      <li><a href="/macroTracker">Macro Tracker</a></li>  &nbsp;
+    <div class="navbar">
+      <a href="/">Home</a>
+      <a class="active" href="/MacroCalc">Macro Calculator</a>
+<!--      <a href="/workoutTracker">Workout Tracker</a>-->
+<!--      <a href="/macroTracker">Macro Tracker</a>-->
 
-    </ul>
+<!--      &lt;!&ndash; Wellness Dropdown Menu &ndash;&gt;-->
+<!--      <div class="dropdown">-->
+<!--        <a> Track Your Results</a>-->
+<!--        <div class="dropdown-content">-->
+<!--          <a href="/workoutresult">Exercises</a>-->
+<!--          <a href="/cardioresult">Cardio</a>-->
+<!--          <a href="/macroresult">Macros</a>-->
+<!--        </div>-->
+<!--      </div>-->
+    </div>
   </nav>
     <img src="images/websitebanner.jpg" alt="weight" width="100%">
   <div><div id="home"></div>
 
       <main>
-        <h3>Please enter your weight, height and age below.</h3>
-        <h4>Then select if you would like to cut, maintain or bulk.</h4>
+        <h3>Let's track what your current macros should be</h3>
+        <h4>Please enter the following information to get your journey started</h4>
+
         <form name="formid" method="post"
               action="/">
-          <label for="weightSelection">Weight in lbs:</label>
-          <input type="number" min="0" step="1" pattern="\d+" name="weightSelection" id="weightSelection" required>
+          <div class="login-form">
+          <input type="number" min="0" step="1" pattern="\d+" name="weightSelection"
+                 id="weightSelection"  placeholder="Weight in pounds" required>
           <br>
           <br>
-          <label for="heightSelection">Height in inches:</label>
-          <input type="number" min="0" step="1" pattern="\d+" name="heightSelection" id="heightSelection" required>
+          <input type="number" min="0" step="1" pattern="\d+" name="heightSelection"
+                 id="heightSelection" placeholder="Height in inches" required>
           <br>
           <br>
-          <label for="ageSelection">Age:</label>
-          <input type="number" min="0" step="1" pattern="\d+" name="ageSelection" id="ageSelection" required>
+          <input type="number" min="0" step="1" pattern="\d+" name="ageSelection"
+                 id="ageSelection" placeholder="Age in years" required>
           <br>
           <br>
           <label for="genderSelection">Gender:</label>
@@ -45,7 +56,7 @@
           <br>
           <br>
           <label for="bulkcutmain">Bulking, Cutting or Maintaining:</label>
-          <select name="ddlselect" size="1" name="bulkcutmain" id="bulkcutmain">
+          <select name="ddlselect" size="1" name="bulkcutmain" id="bulkcutmain" type ="ddlselct">
             <option value="Cut">Cutting</option>
             <option value="Maintain">Maintaining</option>
             <option value="Bulk">Bulking</option>
@@ -55,7 +66,9 @@
           <input type="submit" value="Submit Info Here" id="submit1">
           <br>
           <br>
+          </div>
         </form>
+
         <br>
         <br>
       </main>

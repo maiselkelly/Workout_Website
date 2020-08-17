@@ -10,13 +10,24 @@
     <h1>House of Gainz Workout Tracker</h1>
   </header>
   <nav>
-    <ul>
-      <li><a href="/"> About</a></li>
-  <li><a href="/MacroCalc">Macro Calculator</a> &nbsp;</li>
-   <li><a class="active" href="/workoutTracker">Workout Tracker</a> </li> &nbsp;
-   <li><a href="/macroTracker">Macro Tracker</a></li>  &nbsp;
 
-    </ul>
+    <div class="navbar">
+      <a href="/home">Home</a>
+      <a href="/MacroCalc">Macro Calculator</a>
+      <a class="active" href="/workoutTracker">Workout Tracker</a>
+      <a href="/macroTracker">Macro Tracker</a>
+
+      <!-- Wellness Dropdown Menu -->
+      <div class="dropdown">
+        <a> Track Your Results</a>
+        <div class="dropdown-content">
+          <a href="/workoutresult">Exercises</a>
+          <a href="/cardioresult">Cardio</a>
+          <a href="/macroresult">Macros</a>
+        </div>
+      </div>
+    </div>
+
   </nav>
   <img src="images/websitebanner.jpg" alt="weight" width="100%">
   <div><div id="home"></div>
@@ -25,9 +36,9 @@
     <h3>Track Your Workouts Here!</h3>
     <form name="formid" method="post"
           action="/submitworkout">
-      <label for="dateSelection">Please select today's Date:</label>
-      <br>
+
       <p><b>Workout</b></p>
+      <label for="dateSelection">Today's Date:</label>
       <input type="date" id="dateSelection" name="dateSelection" required>
       <br>
       <br>
@@ -44,11 +55,14 @@
       <br>
       <br>
       <input type="submit" value="Add Another Workout" id="submit1">
-      <input type="submit" value="Workout Complete!" id="submit2">
     </form>
 
-      <form name="formid" method="post" action="/">
+      <form name="formid" method="post" action="/submitcardio">
       <p><b>Cardio</b></p>
+        <label for="dateSelection">Today's Date:</label>
+        <input type="date" id="dateSelection" name="dateSelection" required>
+        <br>
+        <br>
       <label for="cardioSelection">What cardio did you complete?:</label>
       <input type="text" name="cardioSelection" id="cardioSelection" required>
       <br>
@@ -64,14 +78,6 @@
 
     <br>
     <br>
-
-
-    <% for(let i = 0; i < exercises.length; i++) { %>
-    <div>
-      <%= workouts[i].exerciseinput %>
-      <%= workouts.[i].sets%>
-    </div>
-   <% } %>
 
 
   </main>

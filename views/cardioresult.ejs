@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Results:</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1>Your current House of Gainz Results</h1>
+    </header>
+    <nav>
+        <div class="navbar">
+            <a href="/home">Home</a>
+            <a  href="/MacroCalc">Macro Calculator</a>
+            <a href="/workoutTracker">Workout Tracker</a>
+            <a href="/macroTracker">Macro Tracker</a>
+
+            <!-- Wellness Dropdown Menu -->
+            <div class="dropdown">
+                <a> Track Your Results</a>
+                <div class="dropdown-content">
+                    <a href="/workoutresult">Exercises</a>
+                    <a href="/cardioresult">Cardio</a>
+                    <a href="/macroresult">Macros</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <img src="images/websitebanner.jpg" alt="weight" width="100%">
+    <div><div id="home"></div>
+        <main>
+
+
+
+            <h3> Track Your Cardio Results</h3>
+
+            <table style="width:100%">
+                <tr>
+                    <th>Date</th>
+                    <th>Cardio Type</th>
+                    <th>Time (minutes)</th>
+                </tr>
+                <tr>
+                    <td>
+                        <% for(let i = 0; i < cardio.length; i++) { %>
+                            <div>
+                                <%= cardio[i].inputdate %>
+                            </div>
+                        <% } %>
+                    </td>
+                    <td>
+                        <% for(let i = 0; i < cardio.length; i++) { %>
+                            <div>
+                                <%= cardio[i].cardio_workout %>
+                            </div>
+                        <% } %>
+
+                    </td>
+                    <td>
+
+                        <% for(let i = 0; i < cardio.length; i++) { %>
+                            <div>
+                                <%= cardio[i].cardio_time %>
+                            </div>
+                        <% } %>
+                    </td>
+
+                </tr>
+            </table>
+
+
+            <br>
+            <br>
+            <br>
+
+        </main>
+
+        <footer>
+            Copyright &copy; 2020 House of Gainz
+            <a href ="mailto: maiselkelly@gmail.com">maiselkelly@gmail.com</a>
+        </footer>
+</body>
+</html>

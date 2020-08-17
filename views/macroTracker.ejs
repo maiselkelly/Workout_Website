@@ -10,12 +10,22 @@
     <h1>House of Gainz Macro Tracker</h1>
   </header>
   <nav>
-    <ul>
-      <li><a href="/"> About</a></li>
-      <li><a href="/MacroCalc">Macro Calculator</a> &nbsp;</li>
-      <li><a href="/workoutTracker">Workout Tracker</a> </li> &nbsp;
-      <li><a class="active" href="/macroTracker">Macro Tracker</a></li>
-    </ul>
+    <div class="navbar">
+      <a href="/">Home</a>
+      <a  href="/MacroCalc">Macro Calculator</a>
+      <a href="/workoutTracker">Workout Tracker</a>
+      <a class="active" href="/macroTracker">Macro Tracker</a>
+
+      <!-- Wellness Dropdown Menu -->
+      <div class="dropdown">
+        <a> Track Your Results</a>
+        <div class="dropdown-content">
+          <a href="/workoutresult">Exercises</a>
+          <a href="/cardioresult">Cardio</a>
+          <a href="/macroresult">Macros</a>
+        </div>
+      </div>
+    </div>
   </nav>
   <img src="images/websitebanner.jpg" alt="weight" width="100%">
   <div><div id="home"></div>
@@ -24,13 +34,17 @@
 
       <h3>Track Your Macros Here!</h3>
       <form name="formid" method="post"
-            action="/">
+            action="/submitmacros">
         <label for="dateSelection">Please select today's Date:</label>
-        <input type="date" id="dateSelection" name="date" required>
+        <input type="date" id="date" name="date" required>
         <br>
         <br>
         <label for="weightCheck">Enter your current weight here:</label>
         <input type="number" min="0" step="1" pattern="\d+" name="weightCheck" id="weightCheck" required>
+        <br>
+        <br>
+        <label for="bulkcutmain">Bulking, Cutting or Maintaining:</label>
+        <input type="text" name="BCM" id="BCM" required>
         <br>
         <br>
         <label for="calCheck">Enter your current calories here:</label>
@@ -45,7 +59,7 @@
         <input type="number" min="0" step="1" pattern="\d+" name="fatCheck" id="fatCheck" required>
         <br>
         <br>
-        <label for="carbCheck">Enter your current carbs her:</label>
+        <label for="carbCheck">Enter your current carbs here:</label>
         <input type="number" min="0" step="1" pattern="\d+" name="carbCheck" id="carbCheck" required>
         <br>
         <br>
